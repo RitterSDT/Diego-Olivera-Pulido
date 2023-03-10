@@ -1,0 +1,25 @@
+class program {
+        // TODO poner codigo aqui
+void turnright() {
+     turnleft();
+     turnleft();
+     turnleft();
+     }
+void sigueMuroDerecho() {
+     if (rightIsBlocked && frontIsClear)
+     {
+     move();
+     }
+     else {
+     turnright();
+     }
+     }
+program() {
+     while (frontIsClear && rightIsBlocked) {
+     sigueMuroDerecho();
+     }
+     
+         
+        turnoff();
+    }
+}

@@ -1,0 +1,24 @@
+class program {
+void pavo () {
+ iterate(6) {
+  move();
+  }
+  turnleft();
+  turnleft();
+  turnleft();
+ }
+void holo () {
+ if (frontIsClear && nextToABeeper) {
+  pickbeeper();
+  move();
+  holo();
+  }
+ }
+        program () {
+        pavo();
+        holo();
+        pickbeeper();
+        // TODO poner codigo aqui
+        turnoff();
+    }
+}

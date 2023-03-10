@@ -1,0 +1,58 @@
+class program {
+void fj (n) {
+ iterate(n) {
+  putbeeper();
+  }
+ }
+void turn (m) {
+ iterate(m) {
+  turnleft();
+  }
+ }
+    program () {
+    iterate(5) {
+    move();
+    fj(3);
+   }
+   turn(3);
+   iterate(4) {
+    move();
+    fj(3);
+   }
+   turn(3);
+   iterate(4) {
+    move();
+    fj(3);
+   }
+   turn(3);
+   iterate(3) {
+    move();
+    fj(3);
+   }
+   turn(3);
+   iterate(3) {
+    move();
+    fj(2);
+   }
+   turn(3);
+   iterate(2) {
+    move();
+    fj(2);
+   }
+   turn(3);
+   iterate(2) {
+    move();
+    fj(2);
+   }
+   turn(3);
+   iterate(1) {
+    move();
+    fj(2);
+   }
+   turn(3);
+   move();
+   fj(1);
+   
+        turnoff();
+    }
+}

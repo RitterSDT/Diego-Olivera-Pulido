@@ -1,0 +1,44 @@
+class program {
+      void turn(n) {
+      iterate (n)
+      turnleft();
+      }
+      void muevaColoque(m) {
+      iterate ( succ(succ(m))) {
+      if (frontIsBlocked) {
+      turn(1);
+      move();
+      turn(3);
+      move();
+      turn(3);
+      move();
+      turn(1);
+      }
+      else {
+      move();
+      }
+    }
+   } 
+      void pavo(p) {
+      iterate ( pred(pred(p))) {
+      if (frontIsBlocked) {
+      turn(1);
+      move();
+      turn(3);
+      move();
+      turn(3);
+      move();
+      turn(1);
+      }
+      else {
+      putbeeper();
+      }
+    }
+   } 
+    program () {
+        // TODO poner codigo aqui
+        muevaColoque(6);
+        pavo(5);
+        turnoff();
+    }
+}

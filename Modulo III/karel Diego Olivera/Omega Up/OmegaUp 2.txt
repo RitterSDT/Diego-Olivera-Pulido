@@ -1,0 +1,37 @@
+class program {
+ void turn () {
+  iterate(3) {
+   turnleft();
+  }
+}
+void ir() {
+ putbeeper();
+ move();
+ putbeeper();
+ move();
+ putbeeper();
+ move();
+ putbeeper();
+ }
+void regresar () {
+ turnleft();
+ turnleft();
+ move();
+ move();
+ move();
+}
+void cambio () {
+ turnleft();
+ move();
+ turnleft();
+}
+    program () {
+    iterate(4) {
+    ir();
+    regresar();
+    cambio();
+    }
+        ir();
+        turnoff();
+    }
+}

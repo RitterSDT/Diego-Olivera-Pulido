@@ -1,0 +1,33 @@
+class program {
+
+void turnright() {
+   turnleft();
+   turnleft();
+   turnleft();
+}
+
+void buscaMasZumbadores() {
+   pickbeeper();
+   if (notNextToABeeper) {
+   putbeeper();
+   }
+}
+
+program() {
+    iterate (7) {
+    move();
+    turnright();
+    move();
+    turnleft();
+    
+    if (notNextToABeeper) {
+        putbeeper();
+       }
+    else {
+         buscaMasZumbadores();
+        }
+}
+
+        turnoff();
+    }
+}

@@ -1,0 +1,28 @@
+class program {
+void buscaMasZumbadores() {
+
+     pickbeeper();
+     if  (notNextToABeeper) {
+         putbeeper();
+     }
+}
+
+void dejaSoloUnZumbador() {
+     
+    if  (notNextToABeeper) {
+        putbeeper();
+    }
+    else {
+       buscaMasZumbadores();
+    }
+}
+
+program() {
+    while (frontIsClear) {
+       dejaSoloUnZumbador();
+       move();
+    }
+        
+        turnoff();
+    }
+}
